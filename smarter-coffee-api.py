@@ -16,7 +16,6 @@ api_method = API_METHOD_BREW
 
 if api_method == API_METHOD_BREW:
 	message_to_send = "7"
-}
 
 #make connection to machine and send message
 #TODO: add error checking
