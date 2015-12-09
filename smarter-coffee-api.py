@@ -18,12 +18,15 @@ if api_method == API_METHOD_BREW:
 	message_to_send = "7"
 
 #make connection to machine and send message
-#TODO: add error checking
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect((TCP_IP, TCP_PORT))
-s.send(message_to_send)
-data = s.recv(BUFFER_SIZE)
-s.close()
+try:
+	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	s.connect((TCP_IP, TCP_PORT))
+	s.send(message_to_send)
+	data = s.recv(BUFFER_SIZE)
+	s.close()
+except socket.error, msg:
+	print 'Failed to create socket. Error code: ' + str(msg[0]) + ' , Error message : ' + msg[1]
+	sys.exit();
 
 #convert response from machine to unicode
 return_code = unicode(data)
