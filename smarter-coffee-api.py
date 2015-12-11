@@ -5,6 +5,7 @@ import json
 
 #method names to validate
 API_METHOD_BREW = "brew"
+API_METHOD_RESET = "reset"
 
 #IP address of the smarter coffee machine on your network
 TCP_IP = '192.168.1.61'
@@ -16,6 +17,8 @@ api_method = API_METHOD_BREW
 
 if api_method == API_METHOD_BREW:
 	message_to_send = "7"
+elif api_method == API_METHOD_RESET:
+	message_to_send = "\10"
 
 #make connection to machine and send message
 try:
