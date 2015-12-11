@@ -13,7 +13,7 @@ TCP_PORT = 2081
 BUFFER_SIZE = 10
 
 #default method to call
-api_method = API_METHOD_BREW
+api_method = sys.argv[1]
 
 if api_method == API_METHOD_BREW:
 	message_to_send = "7"
