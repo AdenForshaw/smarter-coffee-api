@@ -1,5 +1,5 @@
 # smarter-coffee-api
-Python script that acts as a API for a Smarter Coffee machine - http://smarter.am/coffee/
+Python script that acts as an Unofficial API for a Smarter Coffee machine - http://smarter.am/coffee/
 
 Designed to be used on a RaspberryPi, but could be run on anything with python, and easily be wrapped in a web service to act as a REST API.
 
