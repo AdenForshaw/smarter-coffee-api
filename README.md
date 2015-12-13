@@ -11,9 +11,9 @@ Response:
 JSON - { code:String, success:Boolean, message:String }
 
 Installation:
-- It's a simple python script, so just clone the repo to your machine 
-- change the IP address to that of your Smarter Coffee machine
-- Run it like - "$python smarter-coffee-api.py brew"
+- Clone the repo to your machine
+- Edit the IP address to that of your Smarter Coffee machine
+- Call from the command line e.g. $python smarter-coffee-api.py brew
 
 Version:
 - Very early version - v0.1
