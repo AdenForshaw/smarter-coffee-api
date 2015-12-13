@@ -3,8 +3,12 @@ Python script that acts as an Unofficial API for a Smarter Coffee machine - http
 
 Designed to be used on a RaspberryPi, but could be run on anything with python, and easily be wrapped in a web service to act as a REST API.
 
-Methods:
-- One method so far - "brew" passed as the only parameter. It'll respond with success, or the appropriate error message.
+Methods: string passed as the only parameter.
+- "reset" - resets the machine to default settings. Useful to test with and saves your beans.
+- "brew" - Starts brewing with current settings. It'll respond with success, or the appropriate error message.
+
+Response:
+JSON - { code:String, success:Boolean, message:String }
 
 Installation:
 - It's a simple python script, so just clone the repo to your machine 
