@@ -8,7 +8,7 @@ API_METHOD_BREW = "brew"
 API_METHOD_RESET = "reset"
 
 #IP address of the smarter coffee machine on your network
-TCP_IP = '192.168.1.61'
+TCP_IP = 'XXX.XXX.XXX.XXX'
 TCP_PORT = 2081
 BUFFER_SIZE = 10
 
