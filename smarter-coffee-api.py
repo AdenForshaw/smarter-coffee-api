@@ -8,17 +8,17 @@ API_METHOD_BREW = "brew"
 API_METHOD_RESET = "reset"
 
 #IP address of the smarter coffee machine on your network
-TCP_IP = '192.168.1.61'
+TCP_IP = 'XXX.XXX.XXX.XXX'
 TCP_PORT = 2081
 BUFFER_SIZE = 10
 
 #default method to call
 api_method = sys.argv[1]
-print(api_method)
+
 if api_method == API_METHOD_BREW:
 	message_to_send = "7"
 elif api_method == API_METHOD_RESET:
-	message_to_send = "\10"
+	message_to_send = "\x10"
 
 #make connection to machine and send message
 try:
