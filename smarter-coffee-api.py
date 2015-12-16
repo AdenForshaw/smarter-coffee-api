@@ -8,13 +8,13 @@ API_METHOD_BREW = "brew"
 API_METHOD_RESET = "reset"
 
 #IP address of the smarter coffee machine on your network
-TCP_IP = 'XXX.XXX.XXX.XXX'
+TCP_IP = '192.168.1.61'
 TCP_PORT = 2081
 BUFFER_SIZE = 10
 
 #default method to call
 api_method = sys.argv[1]
-
+print(api_method)
 if api_method == API_METHOD_BREW:
 	message_to_send = "7"
 elif api_method == API_METHOD_RESET:
@@ -48,6 +48,9 @@ elif return_code=="\x03\x05~":
 	message="no carafe"
 elif return_code=="\x03\x06~":
 	message="no water"
+elif return_code=="\x03i~":
+	success=1
+	message="reset"
 else:
 	message="check machine"
 
