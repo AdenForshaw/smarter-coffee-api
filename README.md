@@ -2,9 +2,10 @@
 Python script that acts as an Unofficial API for a Smarter Coffee machine - http://smarter.am/coffee/
 
 Designed to be used on a RaspberryPi, but could be run on anything with python, and easily be wrapped in a web service to act as a REST API.
+
 Basic installation guide: http://adenforshaw.com/smarter-coffee-machine-raspberry-pi-iot-coffeetime/
 
-Methods: string passed as the only parameter.
+Methods: a string passed as the only parameter.
 - "reset" - resets the machine to default settings. Useful to test with and saves your beans.
 - "brew" - Starts brewing with current settings. It'll respond with success, or the appropriate error message.
 
